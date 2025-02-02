@@ -1,5 +1,5 @@
-use actix_web::{web, HttpRequest, HttpResponse};
-use oauth2::{basic::BasicClient, CsrfToken};
+use actix_web::{HttpRequest, HttpResponse};
+use oauth2::CsrfToken;
 use crate::utils::oauth::create_oauth_client;
 
 pub async fn login() -> HttpResponse {
