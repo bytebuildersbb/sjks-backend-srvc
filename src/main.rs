@@ -3,8 +3,9 @@ use dotenv::dotenv;
 use std::env;
 
 mod handlers;
-mod routes::auth;
+mod routes;
 mod config;
+mod utils;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
